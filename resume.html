@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programmer: Joshua Griffis</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header">
+                <h1>Joshua Griffis</h1>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                        <ul>
+                            <!-- Add new project links here -->
+
+                            <li><a href="portfolio.html#RelicOdyssey">Relic Odyssey: Ruins of Xantao</a></li>
+                   	        <li><a href="portfolio.html#AxelNOddol">Axel'N'Oddol</a></li>
+                   	        <li><a href="portfolio.html#Colors">Colors(Game Jam Submission)</a></li>
+                   	        <li><a href="portfolio.html#SummerSideProject">Summer Tech Demo</a></li>
+                            <li><a href="portfolio.html#ProjectDreamer">Project Dreamer</a></li>
+               	        </ul>
+                    </li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li>
+                        <a href="mailto:Joshua_Griffis@outlook.com" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/email-icon.png" alt="Email icon" class="icon">
+                            <span class="label">Joshua_Griffis@outlook.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/joshua-griffis-b3a421230/" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/LinkedInLogo.png" alt="LinkedIn icon" class="icon">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="smallLinks">
+                <button class="toggle-menu">&#9776;</button>
+            </div>
+            <div class="dropdownLinks">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="mailto:Joshua_Griffis@outlook.com" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/email-icon.png" alt="Email icon" class="icon">
+                            <span class="label">Mail</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/joshua-griffis-b3a421230/" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/LinkedInLogo.png" alt="LinkedIn icon" class="icon">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            const toggleMenuButton = document.querySelector('.smallLinks .toggle-menu');
+            const linkList = document.querySelector('.dropdownLinks');
+            const nav = document.querySelector('nav');
+
+            toggleMenuButton.addEventListener('mouseenter', () => {
+                linkList.classList.add('active');
+            });
+
+            linkList.addEventListener('mouseenter', () => {
+                linkList.classList.add('active');
+            });
+
+            linkList.addEventListener('mouseleave', () => {
+                linkList.classList.remove('active');
+            });
+
+            nav.addEventListener('mouseleave', () => {
+                linkList.classList.remove('active');
+            });
+
+        </script>
+
+    </header>
+
+    <main>
+
+        <section class="resume">
+
+            <div class="header">
+                <h1>Joshua Griffis</h1>
+                <ul>
+                    <li>Ottawa, ON</li>
+                    <li>Joshua_Griffis@outlook.com</li>
+                    <li>Github: Voidarkin</li>
+                </ul>
+            </div>
+
+            <div class="education">
+                <h2>Education</h2>
+                <h3>Jan 2021 - Apr 2023</h3>
+                <h4><b>Game Development Advanced Diploma</b></h4>
+                <p>Algonquin College of Applied Arts and Technology, Ottawa, ON</p>
+                <ul>
+                    <li>Contribute as an individual and a member of a game development team to the effective completion of a game development project.</li>
+                    <li>Utilize game engine functionality at an advanced level to support real-time games and simulations.</li>
+                    <li>Conceive, prototype, develop, test and evaluate procedures for the creation, design, programming, production and testing of games in a group environment.</li>
+                    <li>Apply programming principles and techniques to create operational games or game components.</li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <h2>Skills</h2>
+
+                <h3>Programming</h3>
+                <ul>
+                    <li>Wrote and managed maintainable code.</li>
+                    <li>Applied coding best practices and design patterns.</li>
+                    <li>Identified problems and generated solutions.</li>
+                    <li>Developed skills with Unity over a period of 2.5+ years.</li>
+                    <li>Developed skills with Unreal Engine 4 over a period of 1.5+ years.</li>
+                    <li>Created a game engine using OpenGL, and another with DirectX12.</li>
+                    <li>Strong proficiency in C# and C++.</li>
+                    <li>Minor proficiency in HTML, CSS, PHP, JS, and SQL.</li>
+                    <li>Experienced with using profiling and analysis tools with Unity to optimize performance.</li>
+                </ul>
+
+                <h3>Documentation</h3>
+                <ul>
+                    <li>Ensured the creation of strong technical documentation.
+                        <ul>
+                            <li>CRC</li>
+                            <li>UML</li>
+                            <li>TDD</li>
+                            <li>MDD</li>
+                        </ul>
+                    </li>
+                    <li>Collected and managed testing documentation in weekly testing sessions.</li>
+                    <li>Identified, communicated, and documented technical problems, processes, and solutions.</li>
+                </ul>
+
+                <h3>Art</h3>
+                <ul>
+                    <li>Experienced with 3DS Max in the creation of 3D models.</li>
+                    <li>Experienced with unwrapping UVs of 3D models.</li>
+                </ul>
+
+            </div>
+
+            <div class="experience">
+                <h2>Experience</h2>
+
+                <div class="project">
+                    <b>Part-time Engineer</b>
+                    Relic Odyssey: Ruins of Xantao Prototype, Honour Bound Game Studio, Ottawa, Ontario (Feb 2023 - May 2023)
+                    <ul>
+                        <li>Reviewed documentation for multiple plugins used in the Unity engine.</li>
+                        <li>Implemented AI system to develop working enemies.</li>
+                        <li>Documented workflow and steps for employer using Youtrack.</li>
+                        <li>Implemented health system that was multi-purposed for both the player, enemies, and objects.</li>
+                        <li>Implemented UI to display player health and enemy health.</li>
+                        <li>Created a system for designers to more easily create different effects.</li>
+                        <li>Created a waypoint system that is easy for designers to implement.</li>
+                        <li>Created a checkpoint system that is easy for designers to implement</li>
+                        <li>Created an inventory system and a weapon selection system</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <b>Programming Contact, Design Contact, Build Engineer,</b>
+                    Smooth Lightning Game Studio, Ottawa, Ontario (Sept 2022 - Apr 2023)
+                    Algonquin College School Project: Axel N'Oddol
+                    <ul>
+                        <li>Drafted documentation for game features.</li>
+                        <li>Created and delegated sprint tasks to the programming team.</li>
+                        <li>Maintained weekly project builds.</li>
+                        <li>Collected and documented information on weekly test sessions.</li>
+                        <li>Analyzed test results for bug and optimization fixes.</li>
+                        <li>Implemented UI for main menu, options, and pause menu.</li>
+                        <li>Implemented save system.</li>
+                        <li>Implemented simple dialogue system.</li>
+                        <li>Ensured that the game had controller support for the game and UI.</li>
+                        <li>Created a way for designers to easily add in locations for tutorial information to show.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <b>Programmer, Radical Dreamers</b>, Ottawa, Ontario (Jan 2022 - Apr 2022)
+                    Algonquin College School Project: Project Dreamer(working title)
+                    <ul>
+                        <li>Designed and wrote CRC, UML, and MDD documentation.</li>
+                        <li>Implemented UI for above systems.</li>
+                        <li>Created an item ECS so designers could create items easier for player use.</li>
+                        <li>
+                            Designed and implemented role-playing game systems
+                            <ul>
+                                <li>Dialogue System</li>
+                                <li>Equipment System</li>
+                                <li>Inventory System</li>
+                                <li>Crafting System</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>

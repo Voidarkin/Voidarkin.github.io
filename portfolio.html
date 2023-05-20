@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programmer: Joshua Griffis</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header">
+                <h1>Joshua Griffis</h1>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                        <ul>
+                            <!-- Add new project links here -->
+
+                            <li><a href="portfolio.html#RelicOdyssey">Relic Odyssey: Ruins of Xantao</a></li>
+                   	        <li><a href="portfolio.html#AxelNOddol">Axel'N'Oddol</a></li>
+                   	        <li><a href="portfolio.html#Colors">Colors(Game Jam Submission)</a></li>
+                   	        <li><a href="portfolio.html#SummerSideProject">Summer Tech Demo</a></li>
+                            <li><a href="portfolio.html#ProjectDreamer">Project Dreamer</a></li>
+               	        </ul>
+                    </li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li>
+                        <a href="mailto:Joshua_Griffis@outlook.com" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/email-icon.png" alt="Email icon" class="icon">
+                            <span class="label">Joshua_Griffis@outlook.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/joshua-griffis-b3a421230/" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/LinkedInLogo.png" alt="LinkedIn icon" class="icon">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="smallLinks">
+                <button class="toggle-menu">&#9776;</button>
+            </div>
+            <div class="dropdownLinks">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="mailto:Joshua_Griffis@outlook.com" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/email-icon.png" alt="Email icon" class="icon">
+                            <span class="label">Mail</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/joshua-griffis-b3a421230/" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/LinkedInLogo.png" alt="LinkedIn icon" class="icon">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            const toggleMenuButton = document.querySelector('.smallLinks .toggle-menu');
+            const linkList = document.querySelector('.dropdownLinks');
+            const nav = document.querySelector('nav');
+
+            toggleMenuButton.addEventListener('mouseenter', () => {
+                linkList.classList.add('active');
+            });
+
+            linkList.addEventListener('mouseenter', () => {
+                linkList.classList.add('active');
+            });
+
+            linkList.addEventListener('mouseleave', () => {
+                linkList.classList.remove('active');
+            });
+
+            nav.addEventListener('mouseleave', () => {
+                linkList.classList.remove('active');
+            });
+
+        </script>
+
+    </header>
+
+    <main>
+
+		<div class="slideshow-container">
+
+			<div class="slideshow-image active" style="background-image: url('Images/C_01.gif');"></div>
+			<div class="slideshow-image active" style="background-image: url('Images/C_02.gif');"></div>
+			<div class="slideshow-image active" style="background-image: url('Images/C_03.gif');"></div>
+
+			<div class="slideshow-image active" style="background-image: url('Images/AO_01.png');"></div>
+			<div class="slideshow-image active" style="background-image: url('Images/AO_02.png');"></div>
+
+			<div class="slideshow-image active" style="background-image: url('Images/STD_01.png');"></div>
+			<div class="slideshow-image active" style="background-image: url('Images/STD_02.png');"></div>
+			<div class="slideshow-image active" style="background-image: url('Images/STD_03.gif');"></div>
+
+			<div class="slideshow-image active" style="background-image: url('Images/PD_01.png');"></div>
+			<div class="slideshow-image active" style="background-image: url('Images/PD_02.gif');"></div>
+			
+			<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("slideshow-image");
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) {
+						slideIndex = 1
+					}
+					slides[slideIndex - 1].style.display = "block";
+					setTimeout(showSlides, 10000); // Change image every 3 seconds
+				}
+			</script>
+		</div>
+
+		<section class="hero">
+			<h1>Portfolio</h1>
+		</section>
+
+		<section class="portfolio">
+
+			<h2>Table of Contents</h2>
+			<ul>
+				<li><a href="#RelicOdyssey" rel="noopener">Relic Odyssey: Ruins of Xantao (Feb 2023 - May 2023)</a></li>
+				<li><a href="#Colors" rel="noopener">Colors (Dec 2022)</a></li>
+				<li><a href="#AxelNOddol" rel="noopener">Axel N'Oddol (Sept 2022 - Apr 2023)</a></li>
+				<li><a href="#SummerSideProject" rel="noopener">Summer Side Project (May 2022 - Aug 2022)</a></li>
+				<li><a href="#ProjectDreamer" rel="noopener">Project Dreamer (Jan 2022 - Apr 2022)</a></li>
+			</ul>
+
+			<div class="project">
+				<a id="RelicOdyssey"></a>
+				<iframe width="560" height="315" 
+					src="https://www.youtube.com/embed/0T197qEbU5w" 
+					title="BEST FRIENDS - RELIC ODYSSEY: RUINS OF XANTAO - TEASER" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+				</iframe>
+				<h3>Relic Odyssey: Ruins of Xantao</h3>
+				<ul>
+					<a href="https://honourboundgamestudios.itch.io/relic-odyssey-ruins-of-xantao-prototype" target="_blank" rel="noopener noreferrer">
+					<li class="projectLink">Prototype Download</li></a>
+					<a href="https://www.honourboundgamestudios.com/" target="_blank" rel="noopener noreferrer">
+					<li class="projectLink">Company Website</li></a>
+					<li>Platform: <b>Windows</b></li>
+					<li>Genre: <b>FPS</b></li>
+					<li>Team: <b>Honour Bound Game Studio</b></li>
+					<li>Dev Time: <b>Part time for 4 months</b></li>
+				</ul>
+				<ul style="grid-template-columns: repeat(auto-fit, minmax(200px, 3000px))">
+					<li style="font-size: 18px;">Engine: <b>Unity</b></li>
+					<li style="font-size: 18px;"><b>AI Programmer, UI Programmer</b></li>
+					<li style="font-size: 18px;">I worked part time on weekends as part of the studio to work on tasks given to help get a prototype made.</li>
+				</ul>
+			</div>
+
+			<div class="project">
+				<a id="Colors"></a>
+				<img src="Images/C_01.gif" height="315" width="560">
+				<h3>Colors (Game Jam Submission)</h3>
+				<ul>
+					<a href="https://voidarkin.itch.io/colors" target="_blank" rel="noopener noreferrer">
+					<li class="projectLink">Itch.io Link</li></a>
+					<li>Platform: <b>Windows</b></li>
+					<li>Genre: <b>Puzzle, First Person</b></li>
+					<li>Team: <b>Solo Project</b></li>
+					<li>Dev Time: <b>5 Days (Week long GameJam)</b></li>
+				</ul>
+				<ul style="grid-template-columns: repeat(auto-fit, minmax(200px, 3000px))">
+					<li style="font-size: 18px;">Engine: <b>Unity</b></li>
+					<li style="font-size: 18px;"><b>(Solo Project) Programming</b></li>
+					<li style="font-size: 18px;">
+						The following link has a downloadable version with 2 simple levels and a test world with all the features.
+						This was worked on as a part of a private game jam between fellow students, the theme was “Color changes everything”. 
+						We had a weeks worth of time to make and submit. (Was able to use about 4/7 of the days because it was during holidays)
+						Colors’ main features are that objects of certain colors disappear if the world/area color is the same as that color. 
+						Other features exist like a gun that can change the color of certain objects, nodes that cause small localized areas of 
+						the color change, turrets that fire colored bullets at the player.</li>
+				</ul>
+			</div>
+
+			<div class="project">
+				<a id="AxelNOddol"></a>
+				<img src="Images/AO_02.png" height="315" width="560">
+				<h3>Axel N'Oddol</h3>
+				<ul>
+					<a href="https://drive.google.com/drive/folders/1uRN-oqwuD673VpREg5GzTqEk7L9zqllP?usp=sharing" target="_blank" rel="noopener noreferrer">
+					<li class="projectLink">Download Level Up 2023 Showcase Build</li></a>
+					<li>Platform: <b>Windows</b></li>
+					<li>Genre: <b>Action, Platformer</b></li>
+					<li>Team: <b>Smooth Lightning</b></li>
+					<li>Dev Time: <b>Sept 2022 - Apr 2023</b></li>
+				</ul>
+				<ul style="grid-template-columns: repeat(auto-fit, minmax(200px, 3000px))">
+					<li style="font-size: 18px;">Engine: <b>Unity</b></li>
+					<li style="font-size: 18px;"><b>Programming Contact, Design Contact, Build Engineer</b></li>
+					<li style="font-size: 18px;">
+						This is the Capstone project of the Game Development Course at Algonquin College. We decided to make Axel N’ Oddol, a 3D Platformer Collect-a-thon game.
+						Gaining more experience on how to handle team meetings and weekly 20 hour sprint goals while working in our team of 6.
+						I worked as one of two programmers on the project, I took the roles of programming contact, design contact, and build engineer.
+					</li>
+				</ul>
+				<h3 style="margin-left: 15px;">Game Elements Worked On:</h3>
+				<ul>
+					<li>
+						<h3>Dialogue</h3>
+						<p>
+							A simple dialogue system designed using a previous version in a different game engine.
+						</p>
+					</li>
+					<li>
+						<h3>User Interface</h3>
+						<p>The main menu, options menu, and pause menu programming and arrangement of UI elements.</p>
+					</li>
+					<li>
+						<h3>Water Movement</h3>
+						<p>The characters movement in water and the transitions between normal movement, in the water, and under the water.</p>
+					</li>
+					<li>
+						<h3>Level Transitioning</h3>
+						<p>
+							Portals created to allow the character to move through them to transition to the designate level set in the portal as 
+							well as move to the designated level entrance associated with the previous level.
+						</p>
+					</li>
+					<li>
+						<h3>Options</h3>
+						<p>The options menu and how the options affects audio, graphics, and controls.</p>
+					</li>
+					<li>
+						<h3>Collectables</h3>
+						<p>The collectables, the pickup range, as well as tools to give them all unique IDs and to arrange them in lines within the world.</p>
+					</li>
+					<li>
+						<h3>Save System</h3>
+						<p>The system that saves the game and options, converts save data into a binary file to help protect against changing of save data outside of the game.</p>
+					</li>
+					<li>
+						<h3>Bug Fixes & Optimizations</h3>
+						<p>Analyzed weekly testing results to locate bugs and perform fixes and parts of code to optimize.</p>
+					</li>
+					<li>
+						<h3>Boss Fight</h3>
+						<p>Worked on most of the boss fight and mechanics.</p>
+					</li>
+					<li>
+						<h3>Controller Support</h3>
+						<p>Ensured that controllers could be used on the game and it's UI.</p>
+					</li>
+					<li>
+						<h3>Tutorial</h3>
+						<p>Created a way for designers to easily add in locations for tutorial information to show.</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="project">
+				<a id="SummerSideProject"></a>
+				<img src="Images/STD_01.png" height="315" width="560">
+				<h3>Summer Tech Demo</h3>
+
+				<ul>
+					<a href="https://github.com/Voidarkin/SummerSideProject" target="_blank" rel="noopener noreferrer">
+					<li class="projectLink">Github Link</li></a>
+					<li>Platform: <b>Windows</b></li>
+					<li>Genre: <b>RPG</b></li>
+					<li>Team: <b>Solo Project</b></li>
+					<li>Dev Time: <b>3 Months (Part-Time)</b></li>
+				</ul>
+				<ul style="grid-template-columns: repeat(auto-fit, minmax(200px, 3000px))">
+					<li style="font-size: 18px;">Engine: <b>Unreal Engine 4</b></li>
+					<li style="font-size: 18px;"><b>(Solo Project) Programming</b></li>
+					<li style="font-size: 18px;">
+						This was something to keep me busy during the break between semesters, didn’t get as much work done in this as I wanted to. 
+						This was mostly redesigns and improvements of features I made in the mini capstone project in the previous semester.
+					</li>
+				</ul>
+				<h3 style="margin-left: 15px;">Game Elements Worked On:</h3>
+				<ul>
+					<li>
+						<h3>Dialogue</h3>
+						<p>
+							I had a new approach to dialogue that I was trying where I used an ECS for constructing conversations. 
+							There were three main types, Descriptor, Dialogue, and Choice. 
+							Depending on which type the conversation would load next it would change the UI appearance and how to read the data.
+						</p>
+					</li>
+					<li>
+						<h3>Item</h3>
+						<p>Minor changes to existing Item ECS design from previous project.</p>
+					</li>
+					<li>
+						<h3>Level Transitioning</h3>
+						<p>The player can move through certain triggers to load into a different map.</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="project">
+				<a id="ProjectDreamer"></a>
+				<img src="Images/PD_01.png" height="315" width="560">
+				<h3>Project Dreamer</h3>
+				<ul>
+					<a href="https://github.com/Voidarkin/MiniCapstone" target="_blank" rel="noopener noreferrer">
+					<li class="projectLink">Github Link</li></a>
+					<li>Platform: <b>Windows</b></li>
+					<li>Genre: <b>RPG, Adventure</b></li>
+					<li>Team: <b>Radical Dreamers</b></li>
+					<li>Dev Time: <b>Jan 2022 - Apr 2022</b></li>
+				</ul>
+				<ul style="grid-template-columns: repeat(auto-fit, minmax(200px, 3000px))">
+					<li style="font-size: 18px;">Engine: <b>Unreal Engine 4</b></li>
+					<li style="font-size: 18px;"><b>Lead Programmer, UI Programmer</b></li>
+					<li style="font-size: 18px;">This was our college’s “mini” capstone project, where we spent a semester gaining experience on how to manage a group project. 
+						Managing included team meetings and Bi-Weekly sprint goals while working in our team of four.
+						I worked as the sole programmer on the project while the other three worked on art and design. 
+					</li>	
+				</ul>
+				<h3 style="margin-left: 15px;">Game Elements Worked On: (Links to Documentation)</h3>
+				<ul>
+					<li><a href="https://docs.google.com/document/d/1BvlQJARMwTrRGJ8Cdh4NW_Aw1GWeqnFLgQzEPWn3S40/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+							Items
+						</a>
+						<p>Easy way to create unique items using blueprints and an ECS.</p>
+					</li>
+					<li>
+						<a href="https://docs.google.com/document/d/1PXuwTsWSd91NHIBn4Q4I4SMV8u_dN2Tm_S6I36SwyZs/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+							Inventory
+						</a>
+						<p>System that allows the player to store and use items.</p>
+					</li>
+					<li>
+						<a href="https://docs.google.com/document/d/1zzZhoX9P3VlXXLHDEaXQMzo05_rciJkM0yLUgAo8b5Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+							Equipment
+						</a>
+						<p>Players can change character’s equipment and see the stats change to indicate the change.</p>
+					</li>
+					<li>
+						<a href="https://docs.google.com/document/d/1MHT2aTvHhiJeDQZx2x0lXR09-wISbTMZRbQbitmW6mE/edit?usp=sharinge" target="_blank" rel="noopener noreferrer">
+							Crafting
+						</a>
+						<p>
+							Players will have a list of item recipes they can make and can be given more throughout the game’s story. 
+							Items when created can have a “Craftable” component adding on to the item’s ECS which has a list of it’s ingredients.
+						</p>
+					</li>
+					<li>
+						<a href="https://docs.google.com/document/d/1jnIoYeBc9sy-0cyfvApsUpGy-B2tDpkKjSh6XcPQ3HA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+							Dialogue
+						</a>
+						<p>Players can interact with objects or NPCs to initiate dialogue.</p>
+					</li>
+					<li>
+						<a href="https://docs.google.com/document/d/1cxQO73C8gQcx7TZLLBfUzjw6kx2OvS2SVpvJ_ZU95dA/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+							Menus
+						</a>
+						<p>Navigatable menus like: Inventory, Crafting, Equipment, Status, Etc..</p>
+					</li>
+				</ul>
+			</div>
+
+		</section>
+    </main>
+</body>
+</html>
