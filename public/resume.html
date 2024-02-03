@@ -2,81 +2,12 @@
 <html>
 <head>
     <title>Programmer: Joshua Griffis</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <script src="../custom-elements.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="header">
-                <h1>Joshua Griffis</h1>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
-                        <ul>
-                            <!-- Add new project links here -->
 
-                            <li><a href="portfolio.html#WHWGAH">We Have Watermelon Game At Home</a></li>
-							<li><a href="portfolio.html#RelicOdyssey">Relic Odyssey: Ruins of Xantao</a></li>
-                            <li><a href="portfolio.html#DyingRealm">Dying Realm</a></li>
-                   	        <li><a href="portfolio.html#AxelNOddol">Axel'N'Oddol</a></li>
-                   	        <li><a href="portfolio.html#Colors">Colors(Game Jam Submission)</a></li>
-                   	        <li><a href="portfolio.html#SummerSideProject">Summer Tech Demo</a></li>
-                            <li><a href="portfolio.html#ProjectDreamer">Project Dreamer</a></li>
-               	        </ul>
-                    </li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </div>
-            <div class="smallLinks">
-                <button class="toggle-menu">&#9776;</button>
-            </div>
-            <div class="dropdownLinks">
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="mailto:Joshua_Griffis@outlook.com" target="_blank" rel="noopener noreferrer">
-                            <img src="Images/email-icon.png" alt="Email icon" class="icon">
-                            <span class="label">Mail</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/joshua-griffis-b3a421230/" target="_blank" rel="noopener noreferrer">
-                            <img src="Images/LinkedInLogo.png" alt="LinkedIn icon" class="icon">
-                            <span class="label">LinkedIn</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <script>
-            const toggleMenuButton = document.querySelector('.smallLinks .toggle-menu');
-            const linkList = document.querySelector('.dropdownLinks');
-            const nav = document.querySelector('nav');
-
-            toggleMenuButton.addEventListener('mouseenter', () => {
-                linkList.classList.add('active');
-            });
-
-            linkList.addEventListener('mouseenter', () => {
-                linkList.classList.add('active');
-            });
-
-            linkList.addEventListener('mouseleave', () => {
-                linkList.classList.remove('active');
-            });
-
-            nav.addEventListener('mouseleave', () => {
-                linkList.classList.remove('active');
-            });
-
-        </script>
-
-    </header>
+    <page-header></page-header>
 
     <main>
 
@@ -85,7 +16,7 @@
             <div class="header">
                 <h1>Joshua Griffis</h1>
                 <ul>
-                    <li>Ottawa, ON</li>
+                    <li>Chalk RIver, ON</li>
                     <li>Joshua_Griffis@outlook.com</li>
                     <li>Github: Voidarkin</li>
                 </ul>
@@ -116,7 +47,7 @@
                     <li>Developed skills with Unreal Engine 4 over a period of 1.5+ years.</li>
                     <li>Created a game engine using OpenGL, and another with DirectX12.</li>
                     <li>Strong proficiency in C# and C++.</li>
-                    <li>Minor proficiency in HTML, CSS, PHP, JS, and SQL.</li>
+                    <li>experience with HTML, CSS, PHP, JS, and SQL.</li>
                     <li>Experienced with using profiling and analysis tools with Unity to optimize performance.</li>
                 </ul>
 
@@ -144,6 +75,20 @@
 
             <div class="experience">
                 <h2>Experience</h2>
+
+                <div class="project">
+                    <b>Full-time Engineer</b>
+                    Relic Odyssey: Ruins of Xantao Prototype, Honour Bound Game Studio, Ottawa, Ontario (Aug 2023 - Dec 2023)
+                    <ul>
+                        <li>Transferred UI designs from Figma to Unity.</li>
+                        <li>Implemented UI elements and features.</li>
+                        <li>Ensured removal of bugs from feedback.</li>
+                        <li>Participated in daily stand-up meetings.</li>
+                        <li>Optimized frame rate for different parts of the game.</li>
+                        <li>Utilized existing codebases to implement features.</li>
+                        <li>Worked with lead to implement needed features.</li>
+                    </ul>
+                </div>
 
                 <div class="project">
                     <b>Part-time Engineer</b>

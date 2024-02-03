@@ -2,102 +2,33 @@
 <html>
 <head>
     <title>Programmer: Joshua Griffis</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+	<script src="../custom-elements.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="header">
-                <h1>Joshua Griffis</h1>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
-                        <ul>
-                            <!-- Add new project links here -->
-
-							<li><a href="portfolio.html#WHWGAH">We Have Watermelon Game At Home</a></li>
-							<li><a href="portfolio.html#RelicOdyssey">Relic Odyssey: Ruins of Xantao</a></li>
-                            <li><a href="portfolio.html#DyingRealm">Dying Realm</a></li>
-                   	        <li><a href="portfolio.html#AxelNOddol">Axel'N'Oddol</a></li>
-                   	        <li><a href="portfolio.html#Colors">Colors(Game Jam Submission)</a></li>
-                   	        <li><a href="portfolio.html#SummerSideProject">Summer Tech Demo</a></li>
-                            <li><a href="portfolio.html#ProjectDreamer">Project Dreamer</a></li>
-               	        </ul>
-                    </li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </div>
-            <div class="smallLinks">
-                <button class="toggle-menu">&#9776;</button>
-            </div>
-            <div class="dropdownLinks">
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="mailto:Joshua_Griffis@outlook.com" target="_blank" rel="noopener noreferrer">
-                            <img src="Images/email-icon.png" alt="Email icon" class="icon">
-                            <span class="label">Mail</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/joshua-griffis-b3a421230/" target="_blank" rel="noopener noreferrer">
-                            <img src="Images/LinkedInLogo.png" alt="LinkedIn icon" class="icon">
-                            <span class="label">LinkedIn</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <script>
-            const toggleMenuButton = document.querySelector('.smallLinks .toggle-menu');
-            const linkList = document.querySelector('.dropdownLinks');
-            const nav = document.querySelector('nav');
-
-            toggleMenuButton.addEventListener('mouseenter', () => {
-                linkList.classList.add('active');
-            });
-
-            linkList.addEventListener('mouseenter', () => {
-                linkList.classList.add('active');
-            });
-
-            linkList.addEventListener('mouseleave', () => {
-                linkList.classList.remove('active');
-            });
-
-            nav.addEventListener('mouseleave', () => {
-                linkList.classList.remove('active');
-            });
-
-        </script>
-
-    </header>
+    
+	<page-header></page-header>
 
     <main>
 
 		<div class="slideshow-container">
 			
-			<div class="slideshow-image active" style="background-image: url('Images/KenneyJam2023_01.png');"></div>
-			<div class="slideshow-image active" style="background-image: url('Images/KenneyJam2023_02.png');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/KenneyJam2023_01.png');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/KenneyJam2023_02.png');"></div>
 
-			<div class="slideshow-image active" style="background-image: url('Images/AO_01.png');"></div>
-			<div class="slideshow-image active" style="background-image: url('Images/AO_02.png');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/AO_01.png');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/AO_02.png');"></div>
 
-			<div class="slideshow-image active" style="background-image: url('Images/C_01.gif');"></div>
-			<div class="slideshow-image active" style="background-image: url('Images/C_02.gif');"></div>
-			<div class="slideshow-image active" style="background-image: url('Images/C_03.gif');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/C_01.gif');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/C_02.gif');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/C_03.gif');"></div>
 
-			<div class="slideshow-image active" style="background-image: url('Images/STD_01.png');"></div>
-			<div class="slideshow-image active" style="background-image: url('Images/STD_02.png');"></div>
-			<div class="slideshow-image active" style="background-image: url('Images/STD_03.gif');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/STD_01.png');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/STD_02.png');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/STD_03.gif');"></div>
 
-			<div class="slideshow-image active" style="background-image: url('Images/PD_01.png');"></div>
-			<div class="slideshow-image active" style="background-image: url('Images/PD_02.gif');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/PD_01.png');"></div>
+			<div class="slideshow-image active" style="background-image: url('../Images/PD_02.gif');"></div>
 			
 			<script>
 				var slideIndex = 0;
@@ -138,7 +69,7 @@
 
 			<div class="project">
 				<a id="WHWGAH"></a>
-				<img src="Images/WHWGAH.png" height="315" width="560">
+				<img src="../Images/WHWGAH.png" height="315" width="560">
 				<h3>We Have Watermelon Game At Home</h3>
 				<ul>
 					<a href="https://voidarkin.itch.io/we-have-watermelon-game-at-home" target="_blank" rel="noopener noreferrer">
@@ -160,7 +91,7 @@
 
 			<div class="project">
 				<a id="DyingRealm"></a>
-				<img src="Images/KenneyJam2023_02.png" height="315" width="560">
+				<img src="../Images/KenneyJam2023_02.png" height="315" width="560">
 				<h3>Dying Realm (Kenney Jam 2023)</h3>
 				<ul>
 					<a href="https://voidarkin.itch.io/dying-realm" target="_blank" rel="noopener noreferrer">
@@ -185,6 +116,7 @@
 					src="https://cdn.akamai.steamstatic.com/steam/apps/256947567/movie480_vp9.webm?t=1706030472" 
 					title="RELIC ODYSSEY: RUINS OF XANTAO - TRAILER" 
 					frameborder="0" 
+					autoplay="false" 
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 				</iframe>
 				<h3>Relic Odyssey: Ruins of Xantao</h3>
@@ -200,16 +132,26 @@
 				</ul>
 				<ul style="grid-template-columns: repeat(auto-fit, minmax(200px, 3000px))">
 					<li style="font-size: 18px;">Engine: <b>Unity</b></li>
-					<li style="font-size: 18px;"><b>AI Programmer, UI Programmer</b></li>
+					<li style="font-size: 18px;"><b>Engineer</b></li>
 					<li style="font-size: 18px;">
-						I worked part time on weekends as part of the studio to work on tasks given to help get a prototype made.
+						<h4>Feb 2023 - May 2023:</h4>
+						<p>
+							I worked part time on weekends while in my last semester of school to help the studio create the prototype of their game to show to publishers and investors.
+						For prototype, I helped setup Enemies with AI, and setup of some weapons, a gravity glove, checkpoints, waypoints, health system, inventory.
+						</p> <br>
+						<h4>Aug 2023 - Dec 2023:</h4>
+						<p>
+							After funding came in I was hired full time as an Engineer on the project. While working for Honour Bound Game Studios, 
+						I was tasked with working with the UI and features that relied on it. I also worked on Weapons, Projectiles, Enemy & Boss AI, 
+						Options Settings, Optimized Colliders on objects and enemies, etc..
+						</p>
 					</li>
 				</ul>
 			</div>
 
 			<div class="project">
 				<a id="Colors"></a>
-				<img src="Images/C_01.gif" height="315" width="560">
+				<img src="../Images/C_01.gif" height="315" width="560">
 				<h3>Colors (Game Jam Submission)</h3>
 				<ul>
 					<a href="https://voidarkin.itch.io/colors" target="_blank" rel="noopener noreferrer">
@@ -234,7 +176,7 @@
 
 			<div class="project">
 				<a id="AxelNOddol"></a>
-				<img src="Images/AO_02.png" height="315" width="560">
+				<img src="../Images/AO_02.png" height="315" width="560">
 				<h3>Axel N'Oddol</h3>
 				<ul>
 					<a href="https://drive.google.com/drive/folders/1uRN-oqwuD673VpREg5GzTqEk7L9zqllP?usp=sharing" target="_blank" rel="noopener noreferrer">
@@ -309,7 +251,7 @@
 
 			<div class="project">
 				<a id="SummerSideProject"></a>
-				<img src="Images/STD_01.png" height="315" width="560">
+				<img src="../Images/STD_01.png" height="315" width="560">
 				<h3>Summer Tech Demo</h3>
 
 				<ul>
@@ -351,7 +293,7 @@
 
 			<div class="project">
 				<a id="ProjectDreamer"></a>
-				<img src="Images/PD_01.png" height="315" width="560">
+				<img src="../Images/PD_01.png" height="315" width="560">
 				<h3>Project Dreamer</h3>
 				<ul>
 					<a href="https://github.com/Voidarkin/MiniCapstone" target="_blank" rel="noopener noreferrer">

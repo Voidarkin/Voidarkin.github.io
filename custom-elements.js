@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Programmer: Joshua Griffis</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <header>
+class PageHeader extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = `
         <nav>
             <div class="header">
                 <h1>Joshua Griffis</h1>
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="index.html">About</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li>
                         <a href="portfolio.html">Portfolio</a>
                         <ul>
@@ -36,17 +32,18 @@
             </div>
             <div class="dropdownLinks">
                 <ul>
-                    <li><a href="index.html">About</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="mailto:Joshua_Griffis@outlook.com" target="_blank" rel="noopener noreferrer">
-                            <img src="Images/email-icon.png" alt="Email icon" class="icon">
+                            <img src="../Images/email-icon.png" alt="Email icon" class="icon">
                             <span class="label">Mail</span>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/joshua-griffis-b3a421230/" target="_blank" rel="noopener noreferrer">
-                            <img src="Images/LinkedInLogo.png" alt="LinkedIn icon" class="icon">
+                            <img src="../Images/LinkedInLogo.png" alt="LinkedIn icon" class="icon">
                             <span class="label">LinkedIn</span>
                         </a>
                     </li>
@@ -75,43 +72,7 @@
             });
 
         </script>
-
-    </header>
-
-    <main>
-        <section class="contact" style="padding-top: 100px;">
-            <h1 style="display: flex; justify-content: center; align-items: center;">Contact Me</h1>
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <ul style="list-style-type: none;">
-                    <li style="margin-bottom: 10px;">
-                        <a href="mailto:Joshua_Griffis@outlook.com" target="_blank" rel="noopener noreferrer">
-                        <img src="Images/email-icon.png" alt="Email icon" class="icon" width="48px" style="margin-right: 10px;">
-                        <span class="label">Email</span>
-                        </a>
-                    </li>
-                    <li style="margin-bottom: 10px;">
-                        <a href="https://www.linkedin.com/in/joshua-griffis-b3a421230/" target="_blank" rel="noopener noreferrer">
-                        <img src="Images/LinkedInLogo.png" alt="LinkedIn icon" class="icon" width="48px" style="margin-right: 10px;">
-                        <span class="label">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li style="margin-bottom: 10px;">
-                        <a href="https://github.com/Voidarkin" target="_blank" rel="noopener noreferrer">
-                        <img src="Images/GitHubLogo.png" alt="GitHub icon" class="icon" width="48px" style="margin-right: 10px;">
-                        <span class="label">Github</span>
-                        </a>
-                    </li>
-                    <li style="margin-bottom: 10px;">
-                        <a href="https://itch.io/profile/voidarkin" target="_blank" rel="noopener noreferrer">
-                        <img src="Images/ItchLogo.svg" alt="Itch.io icon" class="icon" width="48px" style="margin-right: 10px;">
-                        <span class="label">Itch.io</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
- 
-        </section>
-    </main>
-</body>
-</html>
+    `
+    }
+}
+window.customElements.define('page-header', PageHeader)
