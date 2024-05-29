@@ -9,20 +9,7 @@ class PageHeader extends HTMLElement{
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
-                        <ul>
-                            <!-- Add new project links here -->
-
-                            <li><a href="portfolio.html#WHWGAH">We Have Watermelon Game At Home</a></li>
-							<li><a href="portfolio.html#RelicOdyssey">Relic Odyssey: Ruins of Xantao</a></li>
-                            <li><a href="portfolio.html#DyingRealm">Dying Realm</a></li>
-                   	        <li><a href="portfolio.html#AxelNOddol">Axel'N'Oddol</a></li>
-                   	        <li><a href="portfolio.html#Colors">Colors(Game Jam Submission)</a></li>
-                   	        <li><a href="portfolio.html#SummerSideProject">Summer Tech Demo</a></li>
-                            <li><a href="portfolio.html#ProjectDreamer">Project Dreamer</a></li>
-               	        </ul>
-                    </li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
